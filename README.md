@@ -1,8 +1,11 @@
 # Baltimore-City-Voting-Clusters
 Applying a cluster analysis to data from the 2016 Presidential (General) Election for Baltimore City. Observing how precincts can be grouped based on number of Republicans, number of Democrats, and voter turnout rate.
 
+# Data Source
+The dataset behind this analysis is from the [Baltimore City Government Website](https://elections.maryland.gov/elections/2016/index.html). Specifically, it is the dataset titled "Statewide by Party and Precinct (CSV)" on that webpage. The Excel workbook version of this dataset in this GitHub repository can be accessed [here](https://github.com/tberkery/Baltimore-City-Voting-Clusters/blob/main/Raw%20Data:%20Official%20by%20Party%20and%20Precinct).
+
 # Instructions for Replicating Analysis
-1.	Download the data titled “Statewide by Party and Precicnt (CSV)” from https://elections.maryland.gov/elections/2016/index.html. Save it as an Excel workbook (.xlsx).
+1.	Download the data titled “Statewide by Party and Precinct (CSV)” from https://elections.maryland.gov/elections/2016/index.html. Save it as an Excel workbook (.xlsx).
 1. Apply several filters to the data by going to data and then filter. Filter the column titled LBE such that it only includes “Baltimore City.” Filter by “PRECICNT” to skip any records where the precinct is listed as “unable to be determined.” By filtering on “ELIGIBILE VOTERS,” remove any records for which there are less than 10 eligible voters. Copy all data that is still showing after these filters have been applied into a new worksheet titled “Filtered Data.”
 1. In “Filtered Data,” add a column titled “Precinct-Party Key,” which will serve as a lookup key indicating a precinct and the party affiliation of a given group of voters. Do this by concatenating the value of the “PRECINCT” column with an underscore and the value of the party column, with one caveat: if the content of the “Party” column is not “DEMOCRAT” or “REPUBLICAN” concatenate the underscore with “OTHER”. The formula should look something like the following: “=CONCATENATE(D2, "_",IF(OR(E2="DEMOCRAT", E2="REPUBLICAN"), E2, "OTHER"))”
 1. Create a PIVOT table out of the Filtered Data workbook (which now includes the Precinct-Party Key column). Set Precinct-Party key to be a row and sum of “ELIGIBLE_VOTERS” and sum of “Count of Voters” to be the columns in the PIVOT table. 
