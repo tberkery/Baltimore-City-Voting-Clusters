@@ -13,7 +13,9 @@ How can we group Baltimore City precincts into clusters based on party affiliati
 Using a three cluster analysis, the three clusters are as follows:
 
 Precinct 006-005 = blue = east of the Inner Harbor = near McElderly Park/Linwood
+
 Precinct 006-001 = green = east of the Inner Harbor = near McElderly Park/Linwood
+
 Precinct 013-002 = purple = slightly north and west of Johns Hopkins University = Hampden
 
 ![alt text](https://github.com/tberkery/Baltimore-City-Voting-Clusters/blob/main/Visual%20of%20Baltimore%20City%20Precincts.jpg)
