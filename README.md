@@ -47,6 +47,8 @@ Moreover, this visual shows that very metropolitan, trendy areas like the Inner 
 
 Lastly, we have the areas in blue corresponding to the first cluster, which are more sporadic with the exception of frequently occurring in Northern Baltimore. It's harder to generalize and see a clear pattern for these areas, but they correspond to the desirable outcome of lots of Republicans and Democrats and higher-than-average voter turnout (i.e. higher-than-average election participation).
 
+When it comes to future research, I think it would make sense to include additional measures of economic equality, access to resources and transportation, and the demographics reflecting the diversity (or lack thereof) of each precinct. This would make it possible to delve deeper than generalizations and top-level knowledge of the Baltimore community when exploring the underlying reasons for the voting patterns unveiled in this cluster analysis.
+
 # Instructions for Replicating Analysis
 1. Download the data titled “Statewide by Party and Precinct (CSV)” from https://elections.maryland.gov/elections/2016/index.html. Save it as an Excel workbook (.xlsx).
 3. Apply several filters to the data by going to data and then filter. Filter the column titled LBE such that it only includes “Baltimore City.” Filter by “PRECICNT” to skip any records where the precinct is listed as “unable to be determined.” By filtering on “ELIGIBILE VOTERS,” remove any records for which there are less than 10 eligible voters. Copy all data that is still showing after these filters have been applied into a new worksheet titled “Filtered Data.”
