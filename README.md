@@ -14,7 +14,7 @@ How can we group Baltimore City precincts into clusters based on party affiliati
 For context, consider the following map of Baltimore precincts. The goal here is not to fixate on what precinct is where but rather to understand the approximate composition of precincts and how precincts come in all shapes and sizes.
 
 **Map of Baltimore City Precincts**
-![alt text](https://github.com/tberkery/Baltimore-City-Voting-Clusters)
+![alt text](https://github.com/tberkery/Baltimore-City-Voting-Clusters/blob/main/Visual%20of%20Baltimore%20City%20Precincts.jpg)
 Background diagram courtesy of [Baltimore City Government Website](http://boe.baltimorecity.gov/sites/default/files/CouncilDistricts_WardsPrecincts_tabloid-2012_1.pdf).
 
 With these precincts as context, using a three cluster analysis, the three clusters are as follows (colored in in the prior visualization):
