@@ -11,16 +11,19 @@ The 2016 Election involved the same candidates across every precinct and Baltimo
 How can we group Baltimore City precincts into clusters based on party affiliation, population, and voter turnout using data from the 2016 presidential election?
 
 # Results, Visuals, and Tying It All Together
-Using a three cluster analysis, the three clusters are as follows:
+For context, consider the following map of Baltimore precincts. The goal here is not to fixate on what precinct is where but rather to understand the approximate composition of precincts and how precincts come in all shapes and sizes.
+
+**Map of Baltimore City Precincts**
+![alt text](https://github.com/tberkery/Baltimore-City-Voting-Clusters)
+Background diagram courtesy of [Baltimore City Government Website](http://boe.baltimorecity.gov/sites/default/files/CouncilDistricts_WardsPrecincts_tabloid-2012_1.pdf).
+
+With these precincts as context, using a three cluster analysis, the three clusters are as follows (colored in in the prior visualization):
 
 Precinct 006-005 = blue = east of the Inner Harbor = near McElderly Park/Linwood
 
 Precinct 006-001 = green = east of the Inner Harbor = near McElderly Park/Linwood
 
 Precinct 013-002 = purple = slightly north and west of Johns Hopkins University = Hampden
-
-![alt text](https://github.com/tberkery/Baltimore-City-Voting-Clusters/blob/main/Visual%20of%20Baltimore%20City%20Precincts.jpg)
-Background diagram courtesy of [Baltimore City Government Website](http://boe.baltimorecity.gov/sites/default/files/CouncilDistricts_WardsPrecincts_tabloid-2012_1.pdf).
 
 It's particularly interesting to note that two cluster anchors are immediately adjacent districts the border each other. It's also even more interesting to note that Route 40 (Pulaski Highway) runs right down the border between these two precincts. This supports the frequently observed phenomenon of highways separating two parts of a city that would otherwise have been connected disparate.
 
@@ -32,7 +35,17 @@ Lastly, the third cluster (precinct 013-002) is characterized by having fewer De
 
 So, in relation to the overall business question, when grouping Baltimore City precincts into three clusters by party affiliation, population, and voter turnout, the clusters basically take the following forms: (1) high number of party-registered individuals and a high voter turnout rate, (2) a low number of party-registered individuals and a low voter turnout rate, and (3) high number of Republicans and high turnout rate.
 
-As a future deeper dive, it would be interesting to lookup demographic and socioeconomic information for each precinct to see if precincts in the same cluster for 2016 presidenetial election dynamics mirror clusters for economic opportunity, availability of affordable housing, or accessibility of transportation. For example, perhaps precincts falling into the second cluster have low numbers of registered Democrats and Republicans and low voter turnout because these neighborhoods tend to be disadvantaged economically and lack the work flexibility or transportation to make it to the polls on eleciton day. Exploring these factors further by incorporating them into the cluster analysis would make it possible to better understand the underlying reasons behind the number of party-affiliated individuals for the Democrat and Republican parties and what truly drives voter turnout.
+**Map of Baltimore City Precincts Colored by Cluster**
+![alt text](https://github.com/tberkery/Baltimore-City-Voting-Clusters/blob/main/Baltimore%20Clusters%20Map.jpg)
+Background diagram courtesy of [Baltimore City Government Website](http://boe.baltimorecity.gov/sites/default/files/CouncilDistricts_WardsPrecincts_tabloid-2012_1.pdf).
+
+This visual shows which anchor cluster every Baltimore City precinct maps to, with blue mapping to the first cluster, green to the second, and purple to the third. While there is naturally a lot of variety, there are some patterns. 
+
+The second cluster (low amounts of registered Democrats and Republicans and low voter turnout) characterizes the majority of the western and eastern parts of central Baltimore and nearly all o fBaltimore surrounding and south of Interstate 95. With some exceptions, these areas tend to be less economically advantaged. This cluster analysis suggests that there is reason to believe there may be a relationship between economic resources and election participation. For example, perhaps precincts falling into the second cluster have low numbers of registered Democrats and Republicans and low voter turnout because these neighborhoods tend to be disadvantaged economically and lack the work flexibility or transportation to make it to the polls on eleciton day. Exploring these factors further by incorporating them into the cluster analysis would make it possible to better understand the underlying reasons behind the number of party-affiliated individuals for the Democrat and Republican parties and what truly drives voter turnout.
+
+Moreover, this visual shows that very metropolitan, trendy areas like the Inner Harbor, Fells Point, and Hampden tend to have higher-than-average numbers of Republicans and higher-than-average voter turnout. Given that this is largely the oppposite of the areas of the first cluster indicated in green in terms of skewing towards people with lots of economic resources, this similarly provides evidence that there may be a strong relationship between economic resources and election participation.
+
+Lastly, we have the areas in blue corresponding to the first cluster, which are more sporadic with the exception of frequently occurring in Northern Baltimore. It's harder to generalize and see a clear pattern for these areas, but they correspond to the desirable outcome of lots of Republicans and Democrats and higher-than-average voter turnout (i.e. higher-than-average election participation).
 
 # Instructions for Replicating Analysis
 1. Download the data titled “Statewide by Party and Precinct (CSV)” from https://elections.maryland.gov/elections/2016/index.html. Save it as an Excel workbook (.xlsx).
