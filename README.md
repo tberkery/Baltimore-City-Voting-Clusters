@@ -16,7 +16,7 @@ Precinct 006-005 = blue = east of the Inner Harbor = near McElderly Park/Linwood
 Precinct 006-001 = green = east of the Inner Harbor = near McElderly Park/Linwood
 Precinct 013-002 = purple = slightly north and west of Johns Hopkins University = Hampden
 
-![alt text](https://github.com/tberkery/Baltimore-City-Voting-Clusters/blob/main/Baltimore%20City%20Precincts.pdf)
+![alt text](https://github.com/tberkery/Baltimore-City-Voting-Clusters/blob/main/Visual%20of%20Baltimore%20City%20Precincts.jpg)
 Background diagram courtesy of [Baltimore City Government Website](http://boe.baltimorecity.gov/sites/default/files/CouncilDistricts_WardsPrecincts_tabloid-2012_1.pdf).
 
 It's particularly interesting to note that two cluster anchors are immediately adjacent districts the border each other. It's also even more interesting to note that Route 40 (Pulaski Highway) runs right down the border between these two precincts. This supports the frequently observed phenomenon of highways separating two parts of a city that would otherwise have been connected disparate.
