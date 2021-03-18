@@ -4,8 +4,31 @@ Applying a cluster analysis to data from the 2016 Presidential (General) Electio
 # Data Source
 The dataset behind this analysis is from the [Baltimore City Government Website](https://elections.maryland.gov/elections/2016/index.html). Specifically, it is the dataset titled "Statewide by Party and Precinct (CSV)" on that webpage. The Excel workbook version of this dataset in this GitHub repository can be accessed [here](https://github.com/tberkery/Baltimore-City-Voting-Clusters/blob/main/Raw%20Data:%20Official%20by%20Party%20and%20Precinct).
 
+# Statement of Background
+
+# Business Question
+How can we group Baltimore City precincts into clusters based on party affiliation, population, and voter turnout using data from the 2016 presidential election?
+
+# Results and Visuals
+Using a three cluster analysis, the three clusters are as follows:
+
+Precinct 006-005 = blue = east of the Inner Harbor = near McElderly Park/Linwood
+Precinct 006-001 = green = east of the Inner Harbor = near McElderly Park/Linwood
+Precinct 013-002 = purple = slightly north and west of Johns Hopkins University = Hampden
+
+![alt text](https://github.com/tberkery/Baltimore-City-Voting-Clusters/blob/main/Baltimore%20City%20Precincts.pdf)
+Background diagram courtesy of [Baltimore City Government Website](http://boe.baltimorecity.gov/sites/default/files/CouncilDistricts_WardsPrecincts_tabloid-2012_1.pdf).
+
+It's particularly interesting to note that two cluster anchors are immediately adjacent districts the border each other. It's also even more interesting to note that Route 40 (Pulaski Highway) runs right down the border between these two precincts. This supports the frequently observed phenomenon of highways separating two parts of a city that would otherwise have been connected disparate.
+
+When it comes to the characteristics of each cluster, the first cluster (Precinct 006-005) appears to be highly populated (it has more of both democrats and republicans than average) and to have above average voter turnout. From an elections perspective, a district that has lots of people on both sides that gets a higher-than-average amount to turn out is likely a desirable outcome. Other precincts closely aligned with this cluster include the Inner Harbor and Downtown Baltimore.
+
+The second cluster (precinct 006-001) is characterized by having both less democrats and replubicans than average (indicating a lower-than-average amount of party-affiliated voters) and lower-than-average voter turnout rates. This is an area that activists of both parties would likely seek out with the goal of encouraging increased involvement with elections. Other precincts closely aligned with this cluster include Harwood and Abel (two neighborhoods not too far east of Hopkins).
+
+Lastly, the third cluster (precinct 013-002) is characterized by having fewer Democrats than average and more Republicans than average along with a higher-than-average voter turnout rate. This corresponds to the Hampden neighborhood, and other neighborhoods closely aligned with this cluster include Fells Point. The neighborhoods included in this third cluster tend to be among Baltimore's more affluent and developed neighborhoods. Considering nationwide demographic trends, it isn't surprising to see that this cluster is characterized by increased support of Republican candidates and increased voter turnout.
+
 # Instructions for Replicating Analysis
-1.	Download the data titled “Statewide by Party and Precinct (CSV)” from https://elections.maryland.gov/elections/2016/index.html. Save it as an Excel workbook (.xlsx).
+1. Download the data titled “Statewide by Party and Precinct (CSV)” from https://elections.maryland.gov/elections/2016/index.html. Save it as an Excel workbook (.xlsx).
 1. Apply several filters to the data by going to data and then filter. Filter the column titled LBE such that it only includes “Baltimore City.” Filter by “PRECICNT” to skip any records where the precinct is listed as “unable to be determined.” By filtering on “ELIGIBILE VOTERS,” remove any records for which there are less than 10 eligible voters. Copy all data that is still showing after these filters have been applied into a new worksheet titled “Filtered Data.”
 1. In “Filtered Data,” add a column titled “Precinct-Party Key,” which will serve as a lookup key indicating a precinct and the party affiliation of a given group of voters. Do this by concatenating the value of the “PRECINCT” column with an underscore and the value of the party column, with one caveat: if the content of the “Party” column is not “DEMOCRAT” or “REPUBLICAN” concatenate the underscore with “OTHER”. The formula should look something like the following: “=CONCATENATE(D2, "_",IF(OR(E2="DEMOCRAT", E2="REPUBLICAN"), E2, "OTHER"))”
 1. Create a PIVOT table out of the Filtered Data workbook (which now includes the Precinct-Party Key column). Set Precinct-Party key to be a row and sum of “ELIGIBLE_VOTERS” and sum of “Count of Voters” to be the columns in the PIVOT table. 
