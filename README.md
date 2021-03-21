@@ -10,7 +10,7 @@ The 2016 Election involved the same candidates across every precinct and Baltimo
 # Business Question
 How can we group Baltimore City precincts into clusters based on party affiliation, population, and voter turnout using data from the 2016 presidential election?
 
-# Results, Visuals, and Tying It All Together
+# Data Interpretation
 For context, consider the following map of Baltimore precincts. The goal here is not to fixate on what precinct is where but rather to understand the approximate composition of precincts and how precincts come in all shapes and sizes.
 
 **Map of Baltimore City Precincts**
@@ -24,8 +24,6 @@ Precinct 006-005 = blue = east of the Inner Harbor = near McElderly Park/Linwood
 Precinct 006-001 = green = east of the Inner Harbor = near McElderly Park/Linwood
 
 Precinct 013-002 = purple = slightly north and west of Johns Hopkins University = Hampden
-
-It's particularly interesting to note that two cluster anchors are immediately adjacent districts the border each other. It's also even more interesting to note that Route 40 (Pulaski Highway) runs right down the border between these two precincts. This supports the frequently observed phenomenon of highways separating two parts of a city that would otherwise have been connected disparate.
 
 When it comes to the characteristics of each cluster, the first cluster (Precinct 006-005) appears to be highly populated (it has more of both democrats and republicans than average) and to have above average voter turnout. From an elections perspective, a district that has lots of people on both sides that gets a higher-than-average amount to turn out is likely a desirable outcome. From the perspective of people taking charge of the politicians who represent them, this cluster is largely the gold standard. Other precincts closely aligned with this cluster include the Inner Harbor and Downtown Baltimore.
 
